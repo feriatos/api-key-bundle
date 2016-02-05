@@ -76,7 +76,7 @@ class ApiKeyProvider implements AuthenticationProviderInterface
             return $authenticatedToken;
         }
 
-        throw new AuthenticationException("The API Key authentication failed.");
+        throw new AuthenticationCredentialsNotFoundException();
     }
 
     /**

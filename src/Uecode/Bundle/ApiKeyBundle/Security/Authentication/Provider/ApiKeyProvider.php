@@ -10,6 +10,7 @@ use Symfony\Component\Security\Core\User\UserProviderInterface;
 use FOS\UserBundle\Model\UserInterface;
 use Uecode\Bundle\ApiKeyBundle\Security\Authentication\Token\ApiKeyUserToken;
 use Uecode\Bundle\ApiKeyBundle\Security\Authentication\Provider\ApiKeyUserProviderInterface;
+use Symfony\Component\Security\Core\Exception\AuthenticationCredentialsNotFoundException;
 
 /**
  * @author Aaron Scherer <aequasi@gmail.com>

@@ -70,7 +70,6 @@ class ApiKeyProvider implements AuthenticationProviderInterface
         $user = $provider->loadUserByApiKey($token->getCredentials());
 
         if ($user && $user->isEnabled()) {
-            $user->setRoles(['ROLE_API']);
             $authenticatedToken = new ApiKeyUserToken($user->getRoles());
             $authenticatedToken->setUser($user);
 
